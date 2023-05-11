@@ -13,7 +13,7 @@ data "aws_subnets" "subnets" {
 
 # A data source template for nginx server
 data "template_file" "nginx-data-script" {
-  template = file("./user-data-nginx.tpl")
+  template = file("./user-data.tpl")
 }
 
 module "security_group" {
